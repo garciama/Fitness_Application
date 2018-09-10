@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declaring variables.
     private EditText Name;
     private EditText Password;
     private TextView Info;
@@ -22,16 +23,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //assigning variables defined in XML layout
+        // Assigning variables defined in XML layout
         Name = (EditText)findViewById(R.id.etName);
         Password = (EditText)findViewById(R.id.etPassword);
         Info = (TextView)findViewById(R.id.tvInfo);
         Login = (Button)findViewById(R.id.btnLogin);
 
-        //initialize Info section
+        // Initialize Info section
         Info.setText("# of attempts remaining: 5");
 
-        //set listener for button
+        // Set listener for login button to check username and password.
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,22 +42,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Function to validate the users username and password.
+    // Function to validate the users username and password.
     private void validate(String userName, String userPassword){
         if((userName.equals("Admin")) && (userPassword.equals("1234"))){
-            //intent basically used to go from one activity to another
-            //source and destination parameters, .this for source and .class for destination
+            // Intent basically used to go from one activity to another
+            // source and destination parameters, .this for source and .class for destination
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            //startActivity function starts the activity described in above intent
+            // startActivity function starts the activity described in above intent
             startActivity(intent);
         }
         else{
-            //if incorrect password, take down counter for number of attempts left
+            // If incorrect password, take down counter for number of attempts left
             counter--;
 
-            //update user on # of attempts left
+            // Update user on # of attempts left
             Info.setText("# of attempts remaining: " + String.valueOf(counter));
 
+            // Once no more attempts left, don't let user log in.
             if(counter == 0){
                 Login.setEnabled(false); //disables button
             }

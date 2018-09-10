@@ -6,13 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Chronometer;
-import android.widget.Toast;
 
 public class Stopwatch extends AppCompatActivity {
+
+    // Declaring variables
     private Chronometer chrono;
-    //indicate if chronomoter is running
+    // Boolean to indicate if chronomoter is running
     private boolean running;
     private long pauseOffset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,33 +39,39 @@ public class Stopwatch extends AppCompatActivity {
         }); */
     }
 
+    // Method to start the chronometer
     public void startChronometer(View v){
         if ( !running ) {
-            //from default, the chrono starts from time the activity opened
-            //so we use this setBase function to make the timer start when we click button
+            // By default, the chronometer starts from time the activity opened
+            // so we use this setBase function to make the timer start when we click the button.
             chrono.setBase(SystemClock.elapsedRealtime() - pauseOffset);
             chrono.start();
             running = true;
         }
     }
 
+    // Method to pause the chronometer
     public void pauseChronometer(View v){
         if (running) {
-            //by default, chrono.stop only stops the text, not the chronometer
-            //so we have to set it ourself with our variable called pauseOffest.
+            // By default, chrono.stop only stops the text from updating, not the chronometer.
+            // So we have to set the text with our variable called pauseOffest.
             chrono.stop();
-            //takes current elapsed real time minus system clock elapsed real time
+
+            // Takes current elapsed real time minus system clock elapsed real time
             pauseOffset = SystemClock.elapsedRealtime() - chrono.getBase();
+
             running = false;
         }
     }
 
+    // Method to reset the chronometer.
     public void resetChronometer(View v){
-        //both of these commands reset the chronometer
+        // Both of these commands reset the chronometer
         chrono.setBase(SystemClock.elapsedRealtime());
         pauseOffset = 0;
     }
 
+    // Method to set the "Back" button to go back to home page.
     public void goBack(View v){
         Intent backIntent = new Intent(Stopwatch.this, SecondActivity.class);
         startActivity(backIntent);

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Notes">
 
+    <!-- Text field for the user to type in their notes. -->
     <EditText
         android:id="@+id/notesSection"
         android:layout_width="384dp"
@@ -20,6 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Button that redirects to home page. -->
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
@@ -37,6 +40,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.95" />
 
+    <!-- Button to save users notes. -->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/saveButton"
         android:layout_width="53dp"

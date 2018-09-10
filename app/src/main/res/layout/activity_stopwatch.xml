@@ -9,6 +9,8 @@
     android:background="@drawable/blur"
     tools:context=".Stopwatch">
 
+
+    <!-- Chronometer class implements a simple timer. -->
     <Chronometer
         android:id="@+id/chrono"
         android:layout_width="wrap_content"
@@ -25,6 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.12" />
 
+    <!-- Button that starts the chronometer. -->
     <Button
         android:id="@+id/button2"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -42,6 +45,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454" />
 
+    <!-- Button that pauses the chronometer. -->
     <Button
         android:id="@+id/button3"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -59,6 +63,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.626" />
 
+    <!-- Button that resets the chronometer. -->
     <Button
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
         android:layout_width="121dp"
@@ -76,6 +81,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.796" />
 
+    <!-- Button that will redirect to the home page. -->
     <Button
         android:id="@+id/btnback"
         android:layout_width="wrap_content"

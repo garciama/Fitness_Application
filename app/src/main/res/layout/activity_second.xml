@@ -8,6 +8,7 @@
     tools:context="com.example.logindemo.SecondActivity"
     tools:layout_editor_absoluteY="25dp">
 
+    <!-- Button that will redirect to stopwatch activity. -->
     <Button
         android:id="@+id/btnStopwatch"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -24,6 +25,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.771" />
 
+    <!-- Button that will redirect to timer activity. -->
     <Button
         android:id="@+id/btnTimer"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -40,6 +42,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.608" />
 
+    <!-- Button that will redirect to nutrition activity. -->
     <Button
         android:id="@+id/btnNutrition"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -56,6 +59,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.179" />
 
+    <!-- Button that will redirect to workout activity. -->
     <Button
         android:id="@+id/btnWorkout"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -72,6 +76,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.329" />
 
+    <!-- Button that will redirect to notes activity. -->
     <Button
         android:id="@+id/btnNotes"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
@@ -88,18 +93,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.472" />
 
+    <!-- Button that will bring user to login page. -->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:clickable="true"
+        app:backgroundTint="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logout" />
 
+    <!-- Navigation bar that will allow user to go to songs, home page, and saved videos. -->
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigationView"
         android:layout_width="0dp"

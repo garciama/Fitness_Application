@@ -7,7 +7,7 @@
     android:background="@drawable/blurdeadlift"
     tools:context="com.example.logindemo.MainActivity">
 
-
+    <!-- Text field for the user to enter username. -->
     <EditText
         android:id="@+id/etName"
         android:layout_width="wrap_content"
@@ -26,6 +26,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.24" />
 
+    <!-- Text field for the user to enter password. -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
@@ -44,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etName"
         app:layout_constraintVertical_bias="0.111" />
 
+    <!-- Button that will verify username and password. -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
@@ -59,6 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
         app:layout_constraintVertical_bias="0.145" />
 
+    <!-- TextView to display login attempts left. -->
     <TextView
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"

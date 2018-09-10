@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class Timer extends AppCompatActivity {
 
+    // Declaring all variables.
     private Button Back, Start, Reset;
     private int userMilliseconds;
     private String userInput;
@@ -22,14 +23,14 @@ public class Timer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
 
-        //assign variables to XML ID's
+        // Assign variables to XML ID's
         Back = (Button)findViewById(R.id.backButton);
         Start = (Button)findViewById(R.id.timerStart);
         Reset = (Button)findViewById(R.id.timerReset);
         timerView = (TextView)findViewById(R.id.timerView);
         timerInput = (EditText)findViewById(R.id.timerInput);
 
-
+        // Setting onClickListener to start the timer.
         Start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +47,8 @@ public class Timer extends AppCompatActivity {
                 }.start();
             }
         });
+
+        // Setting onClickListener for the reset button so it resets the timer.
         Reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,6 +58,8 @@ public class Timer extends AppCompatActivity {
                 startActivity(getIntent());
             }
         });
+
+        // Setting onClickListener for the Back button so it goes back to the home page.
         Back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,6 +69,6 @@ public class Timer extends AppCompatActivity {
                 startActivity(backIntent);
             }
         });
-    }
 
+    }
 }
