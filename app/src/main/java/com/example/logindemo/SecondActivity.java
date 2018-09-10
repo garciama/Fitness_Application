@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class SecondActivity extends AppCompatActivity {
 
-    // Declaring variables
+    // Declaring variables.
     private Button Nutrition;
     private Button Workout;
     private Button Notes;
