@@ -27,6 +27,11 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".TestTimer" />
         <activity android:name=".Stopwatch" />
+        <activity
+            android:name=".Testing"
+            android:label="@string/title_activity_testing"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".test"></activity>
     </application>
 
 </manifest>

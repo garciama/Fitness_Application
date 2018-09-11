@@ -16,4 +16,5 @@
     <string name="Start">Start</string>
     <string name="Reset">Reset</string>
     <string name="title_activity_note_select">NoteSelect</string>
+    <string name="title_activity_testing">Testing</string>
 </resources>
