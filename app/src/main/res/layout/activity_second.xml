@@ -12,8 +12,8 @@
     <Button
         android:id="@+id/btnStopwatch"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -21,16 +21,17 @@
         android:text="Stopwatch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.838" />
 
     <!-- Button that will redirect to timer activity. -->
     <Button
         android:id="@+id/btnTimer"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -38,16 +39,17 @@
         android:text="Timer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
+        app:layout_constraintVertical_bias="0.651" />
 
     <!-- Button that will redirect to nutrition activity. -->
     <Button
         android:id="@+id/btnNutrition"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -55,16 +57,17 @@
         android:text="Nutrition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <!-- Button that will redirect to workout activity. -->
     <Button
         android:id="@+id/btnWorkout"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -72,16 +75,17 @@
         android:text="Workout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.101" />
 
     <!-- Button that will redirect to notes activity. -->
     <Button
         android:id="@+id/btnNotes"
         style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -89,9 +93,10 @@
         android:text="Notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+        app:layout_constraintVertical_bias="0.467" />
 
     <!-- Button that will bring user to login page. -->
     <android.support.design.widget.FloatingActionButton
