@@ -4,7 +4,7 @@
         android:width="3dp"
         android:color="#E0E6F8" />
 
-    <solid android:color="#81DAF5" />
+    <gradient android:startColor="@color/white" />
 
     <padding
         android:left="1dp"
